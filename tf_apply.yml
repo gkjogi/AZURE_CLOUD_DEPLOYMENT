@@ -37,7 +37,8 @@ jobs:
               id: init
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" init
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" init
-              run: terraform -chdir="../python_azurerm_linux_function_app/" init
+              #run: terraform -chdir="../python_azurerm_linux_function_app/" init
+              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" init
              
             - name: Terraform Plan
               id: plan
@@ -45,7 +46,8 @@ jobs:
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" plan -no-color
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" plan -generate-config-out=generated.tf
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" plan -generate-config-out=generated.tf
-              run: terraform -chdir="../python_azurerm_linux_function_app/" plan
+              #run: terraform -chdir="../python_azurerm_linux_function_app/" plan
+              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" plan
 
               #continue-on-error: true
             
@@ -59,7 +61,8 @@ jobs:
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" apply -auto-approve
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" apply -auto-approve
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" apply -auto-approve
-              run: terraform -chdir="../python_azurerm_linux_function_app/" apply -auto-approve
+              #run: terraform -chdir="../python_azurerm_linux_function_app/" apply -auto-approve
+              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" apply -auto-approve
 
             #- name: Terraform Destroy
             #  if: github.ref == 'refs/heads/main' && github.event_name == 'push'
