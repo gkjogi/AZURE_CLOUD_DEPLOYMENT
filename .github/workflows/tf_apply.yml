@@ -10,7 +10,7 @@ permissions:
   id-token: write  # Required for OIDC
   contents: read   # Usually required to checkout code
 jobs:
-    Blue_BlueField_Deployment_CurrentVersion_Deployment_Identical_Regions_Deployment:
+    Ganesh-GitHub-WorkFlow-Blue_BlueField_Deployment_CurrentVersion_Deployment_Identical_Regions_Deployment:
         name: "Blue-Green Deployment Strategies or BlueField_Deployment or GreenField Deployment - CurrentVersion_Deployment_On_Identical_Regions_Deployment"
         runs-on: ubuntu-latest
         #defaults:
