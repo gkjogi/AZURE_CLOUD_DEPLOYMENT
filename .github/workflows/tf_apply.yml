@@ -49,7 +49,7 @@ jobs:
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" plan -generate-config-out=generated.tf
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" plan -generate-config-out=generated.tf
               #run: terraform -chdir="../python_azurerm_linux_function_app/" plan
-              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" plan
+              run: terraform -chdir="../AZURE_CLOUD_DEPLOYMENT/Infra_IAC/" plan
 
               #continue-on-error: true
             
@@ -64,7 +64,7 @@ jobs:
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" apply -auto-approve
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" apply -auto-approve
              #run: terraform -chdir="../python_azurerm_linux_function_app/" apply -auto-approve
-              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" apply -auto-approve
+              run: terraform -chdir="../AZURE_CLOUD_DEPLOYMENT/Infra_IAC/" apply -auto-approve
 
             #- name: Terraform Destroy
             #  if: github.ref == 'refs/heads/main' && github.event_name == 'push'
