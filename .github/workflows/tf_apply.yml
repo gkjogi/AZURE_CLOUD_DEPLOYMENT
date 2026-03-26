@@ -39,7 +39,8 @@ jobs:
               #run: terraform -chdir="../GitOps/Infra/Azure_Kubernetes_Clusters/" init
               #run: terraform -chdir="../GitOps/Infra/AI_Services_Cognitive_Services_deployment/" init
               #run: terraform -chdir="../python_azurerm_linux_function_app/" plan
-              run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" init
+              #run: terraform -chdir="../Azure_Cloud_Deployment/Infra_IAC/" init
+              run: terraform -chdir="../AZURE_CLOUD_DEPLOYMENT/Infra_IAC/" init
              
             - name: Terraform Plan
               id: plan
