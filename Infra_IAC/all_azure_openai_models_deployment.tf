@@ -1,5 +1,5 @@
 #Azure openai with Diagnostic - logs_events_metrics_traces_transfer_to_SA_Eventhub_Log_analytics_workspace
-
+#
 # 1. Resource Group
 resource "azurerm_resource_group" "rg-openai-full-stack-python" {
   name     = "rg-openai-full-stack-python"

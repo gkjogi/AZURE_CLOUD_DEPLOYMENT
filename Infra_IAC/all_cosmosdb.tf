@@ -11,7 +11,7 @@
 #provider "azurerm" {
 #  features {}
 #}
-
+#
 resource "azurerm_resource_group" "cosmos" {
   name     = "RG-cosmos-db-full-stack"
   location = "East US"
